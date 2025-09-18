@@ -1,16 +1,70 @@
-# Project overview
+Pet insurance web application monorepo.
 
-This monorepo contains code for a pet insurance web application.
+# Folder structure
+
+- apps
+  - frontend (React with Next.js)
+  - backend (C# .NET API)
 
 # Project Stack
 
 ## Frontend
 
-React with Next.js, TypeScript, TailwindCSS.
+### Framework
+
+React with Next.js using the app router.
+
+### Types
+
+TypeScript, with strict configuration
+
+### Styling
+
+Tailwind
+
+### Component library
+
+shadcn/UI for pre-built accessible components.
+
+### Package management
+
+Bun
+
+### Testing
+
+Playwright for end-to-end/UI testing. Vitest for component development and testing.
+
+### Schema validation
+
+Zod for runtime schema validation and derived types.
+
+### Component library
 
 ## Backend
 
-.NET with a REST API, using MediatR for CQRS, Domain-Driven Design patterns, and Entity Framework (DB-first).
+### Framework
+
+C# .NET
+
+### Database
+
+SQL Server running in a Docker container.
+
+### API
+
+REST API using Web API
+
+### CQRS
+
+MediatR
+
+### ORM
+
+Entity Framework DB-first
+
+## Monorepo Management
+
+Turborepo for build orchestration and task running.
 
 ## Hosting/Infrastructure
 
@@ -19,11 +73,3 @@ Azure with Kubernetes.
 ## Authentication
 
 Okta for B2B integrations and Entra ID for internal access.
-
-## Testing
-
-Playwright for end-to-end/UI testing.
-
-## AI/Dev Workflow
-
-We've been experimenting a bit with Cursor and Claude to help speed up development and prototyping.
