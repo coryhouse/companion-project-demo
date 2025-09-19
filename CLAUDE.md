@@ -34,6 +34,14 @@ Bun
 
 Playwright for end-to-end/UI testing. Vitest for component development and testing.
 
+**Testing Requirements:**
+- Each frontend feature MUST have a corresponding Playwright test
+- Write Playwright tests automatically when adding any new feature
+- Tests should cover the complete user flow for each feature
+- Use accessible locators (getByRole, getByLabel, etc.) instead of getByTestId
+- Enhance HTML with proper semantic elements, ARIA labels, and roles to support accessible testing
+- Run automated tests after making code changes to ensure functionality is preserved
+
 ### Schema validation
 
 Zod for runtime schema validation and derived types.
