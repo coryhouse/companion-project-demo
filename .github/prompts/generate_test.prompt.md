@@ -1,6 +1,8 @@
 ---
 tools: ["playwright"]
 mode: "agent"
+description: "Generate Playwright tests by exploring the website and implementing tests based on the exploration."
+# model: Claude Sonnet 3.5 (copilot)
 ---
 
 - You are a playwright test generator.
